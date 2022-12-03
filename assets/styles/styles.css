@@ -1,5 +1,195 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+/* general */
 * {
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: #ddd;
+}
+
+input {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+.user-photo {
+    border-radius: 50%;
+    width: 50px;
+    background-color: #ccc;
+}
+
+.user-photo.small {
+    width: 35px;
+}
+
+.icons-container i {
+    color: #80868A;
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+/* page */
+
+.page-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+}
+
+/* sidebar */
+
+/* toolbar */ 
+
+.toolbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    padding: 15px 20px;
+}
+
+.toolbar-container .icons-container {
+    display: flex;
+}
+
+/* notification container */
+
+.notification-container {
+    background-color: #9DE1FE;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-container .fa-bell-slash {
+    color: #9DE1FE;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.notification-container p {
+    color: #384c56;
+}
+
+.notification-messages-container p:first-child {
+    font-size: 15px;
+}
+
+.notification-container p:nth-child(2) {
+    font-size: 13px;
+}
+
+/* search bar */
+
+.search-container {
+    position: relative;
+    padding: 5px 15px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 6px 0px 6px 50px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.search-container input::placeholder {
+    color: #ddd;
+}
+
+.search-container input:focus {
+    border-color: #ddd;
+}
+
+.search-container i {
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    color: #ddd;
+}
+
+/* contact container */
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-container.activate {
+    background-color: #E9EBEB;
+}
+
+.contact-container:hover {
+    background-color: #eee;
+}
+
+.contact-container.activate:hover {
+    background-color: #E9EBEB;
+}
+
+.contact-container .user-photo {
+    margin-right: 15px;
+}
+
+.contact-info-container {
+    flex: 1;
+    align-self: flex-start;
+}
+
+.contact-info-container .contact-name {
+    font-size: 16px;
+}
+
+.contact-info-container .contact-last-message {
+    font-size: 14px;
+}
+
+.contact-info-container i {
+    color: #4FC3F7;
+}
+
+.contact-messages-info-container {
+    align-self: flex-start;
+}
+
+.contact-messages-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.message-time {
+    font-size: 12px;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.messages-not-read {
+    background-color: #09d261;
+    border-radius: 50%;
+    height: 18px;
+    line-height: 18px;
+    width: 18px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
 }
