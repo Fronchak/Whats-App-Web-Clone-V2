@@ -32,6 +32,7 @@ input {
     color: #80868A;
     padding: 0 15px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 /* page */
@@ -47,9 +48,13 @@ input {
 
 /* sidebar */
 
+.aside-container {
+    flex: 1;
+}
+
 /* toolbar */ 
 
-.toolbar-container {
+.top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -193,3 +198,105 @@ input {
     text-align: center;
     font-size: 12px;
 }
+
+/* chat container */
+
+.chat-container {
+    flex: 2.5;
+}
+
+.chat-container main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* chat top bar */
+
+.chat-navbar-container .contact-name {
+    flex: 1;
+}
+
+.chat-navbar-container .user-photo {
+    margin-right: 15px;
+}
+
+.chat-container .chat-messages-container {
+    flex: 1;
+    background-color: #E1DAD2;
+    position: relative;
+}
+
+.chat-messages-container {
+    position: relative;
+}
+
+.chat-messages-container .background-image {
+    background-image: url(../imgs/background_whats.png);
+    height: 100%;
+    opacity: 0.1;
+    background-repeat: repeat;
+}
+
+.chat-messages-container .messages-container {
+    position: absolute;
+    bottom: 0;
+    padding: 20px 50px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.chat-messages-container .messages-container p {
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+    margin-bottom: 15px;
+    
+}
+
+.contact-message {
+    background-color: #fff;
+}
+
+.user-message {
+    background-color: #DCF8C6;
+    float: right;
+}
+
+/* message input */
+
+.message-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.message-input-container i {
+    font-size: 20px;
+    color: #bbb;
+    cursor: pointer;
+}
+
+.message-input-container i:first-child {
+    margin-right: 30px;
+}
+
+.message-input-container i:last-child {
+    margin-left: 120px;
+}
+
+.message-input-container input {
+    flex: 1;
+    font-size: 12px;
+    border: 1px solid #fff;
+    padding: 5px 10px 5px 20px;
+    border-radius: 30px;
+    font-family: inherit;
+}
+
+.message-input-container input:focus {
+    border-color: #ccc;
+}
+
